@@ -1,6 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BubbleCap - Decentralized Fan Meeting Platform for Baseball Fans
 
-## Getting Started
+## Table of Contents
+- [1. Who we are](#1-who-we-are)
+- [2. Project Overview](#2-project-overview)
+- [3. Setup](#3-setup)
+- [4. Project Solution Description](#4-project-solution-description)
+- [5. Endpoint Explanation (Technical Details)](#5-endpoint-explanation-technical-details)
+- [6. Demo Video](#6-demo-video)
+
+## 1. Who we are
+
+![image1.png](public/image1.png)
+
+We are **BubbleCap**, a team of developers and sports enthusiasts combining blockchain technology with fan engagement. Our mission is to provide baseball fans with a decentralized platform to connect, engage, and interact with their favorite players in unique and meaningful ways.
+
+
+## 2. Project Overview
+
+**BubbleCap** is a decentralized fan meeting platform for baseball fans. By leveraging blockchain and **Chiliz** fan tokens, we provide fans with access to exclusive events, NFT collections, private fan meetings, and direct communication with players. Fans can engage with the platform through features like **Bubble Catch**, **Bubble Talk**, and **My Page**, which enhances their interaction with the sport and its players while ensuring privacy and ownership over digital assets.
+
+## 3. Setup
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
@@ -18,20 +39,35 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## 4. Project Solution Description
 
-To learn more about Next.js, take a look at the following resources:
+Our platform, BubbleCap, operates as follows:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+BubbleCap is a decentralized fan meeting platform for baseball fans, designed to offer a range of experiences such as checking game schedules, chatting with players, and participating in private fan meetings. The platform leverages blockchain technology to record fan activities and provide special benefits based on token ownership.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The core solution of BubbleCap is to offer fans new forms of engagement and rewards. Fans can use Chiliz fan tokens to participate in various activities within the platform, which are combined with blockchain-based NFTs.
 
-## Deploy on Vercel
+The "Bubble Catch" game provides three levels of draws based on randomness. There are three catch options with odds of 29%, 49%, and 89%. Trying for higher odds requires a higher cost but also offers greater rewards. Fans can collect NFTs to complete a team NFT collection composed of specific team players, and those who complete the team collection will receive invites to private parties. This process of collecting NFTs and participating in private fan meetings offers fans exciting challenges and is expected to increase the demand for Chiliz tokens.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![image2.png](public/image2.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# BubbleCapFront
+Additionally, the "Bubble Talk" feature allows fans to use Chiliz fan tokens to chat directly with players, creating a stronger fan community. Unlike traditional fan communities, Bubble Talk combines communication with digital assets, providing fans with a tangible benefit of blockchain-based platforms.
+
+![image3.png](public/image3.png)
+
+“My Page” is a space where users can manage their information. Firstly, in My NFT, users can view the NFTs they have collected so far, and clicking each card provides detailed information about that NFT. In My CAP, users can check the CAP rewards given for collecting all NFTs of a specific team, which can lead to an invite to private parties. My Info allows users to view and manage their personal and account information, while Payments enables users to select their favorite team, top up team tokens, and purchase access to Bubble Talk or Bubble Catch.
+
+By participating in the platform based on NFTs and Chiliz tokens, fans can add economic value to their fandom activities. As the NFT market becomes more active, the value of Chiliz tokens is expected to rise, leading to positive outcomes for both fans and the platform.
+
+## 5. Endpoint Explanation (Technical Details)
+
+- `/login`: Allows users to check detailed information after wallet connection.
+- `/bubblecatch`: Provides a random probability game to acquire NFTs.
+- `/bubbletalk`: Offers communication with players, integrating digital assets.
+- `/mypage`: Allows users to manage their information and recharge team tokens.
+
+## 6. Demo Video
+
+[Watch the BubbleCap Demo](https://youtu.be/a7f66EqgJzw)
