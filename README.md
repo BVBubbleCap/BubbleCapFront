@@ -52,7 +52,7 @@ The core solution of BubbleCap is to offer fans new forms of engagement and rewa
 
 The "Bubble Catch" game provides three levels of draws based on randomness. There are three catch options with odds of 29%, 49%, and 89%. Trying for higher odds requires a higher cost but also offers greater rewards. Fans can collect NFTs to complete a team NFT collection composed of specific team players, and those who complete the team collection will receive invites to private parties. This process of collecting NFTs and participating in private fan meetings offers fans exciting challenges and is expected to increase the demand for Chiliz tokens.
 
-![BubbleCap logo](https://github.com/BVBubbleCap/BubbleCapFront/raw/main/image2.png)
+<img width="324" alt="image2" src="https://github.com/BVBubbleCap/BubbleCapFront/raw/main/image2.png">
 
 Additionally, the "Bubble Talk" feature allows fans to use Chiliz fan tokens to chat directly with players, creating a stronger fan community. Unlike traditional fan communities, Bubble Talk combines communication with digital assets, providing fans with a tangible benefit of blockchain-based platforms.
 
