@@ -56,7 +56,7 @@ The "Bubble Catch" game provides three levels of draws based on randomness. Ther
 
 Additionally, the "Bubble Talk" feature allows fans to use Chiliz fan tokens to chat directly with players, creating a stronger fan community. Unlike traditional fan communities, Bubble Talk combines communication with digital assets, providing fans with a tangible benefit of blockchain-based platforms.
 
-![BubbleCap logo](https://github.com/BVBubbleCap/BubbleCapFront/raw/main/image3.png)
+<img width="324" alt="image3" src="https://github.com/BVBubbleCap/BubbleCapFront/raw/main/image3.png">
 
 “My Page” is a space where users can manage their information. Firstly, in My NFT, users can view the NFTs they have collected so far, and clicking each card provides detailed information about that NFT. In My CAP, users can check the CAP rewards given for collecting all NFTs of a specific team, which can lead to an invite to private parties. My Info allows users to view and manage their personal and account information, while Payments enables users to select their favorite team, top up team tokens, and purchase access to Bubble Talk or Bubble Catch.
 
