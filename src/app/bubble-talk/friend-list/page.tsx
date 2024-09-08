@@ -1,33 +1,41 @@
 "use client";
 
 import styled from 'styled-components';
-import SingleUser from '../../../components/single-user'
-import NavBar from '../../../components/bottom-nav-bar'
+import SingleUser from '../../../components/single-user';
+import NavBar from '../../../components/bottom-nav-bar';
+import { useRouter } from 'next/navigation';
 
 export default function FriendList() {
+  const router = useRouter();
+
+  const handleUserClick = (path: string) => {
+    router.push(path);
+  };
+
   return (
     <Container>
       <Content>
         <Title>My Profile</Title>
         <SingleUser 
-          profileImage="path/to/image.jpg" 
+          profileImage="/seunghye.png" 
           name="seunghye🥇" 
           statusMessage="" 
         />
         <Divider />
         <Title>Friends 3</Title>
         <SingleUser 
-          profileImage="path/to/image1.jpg" 
+          profileImage="/sumin.png" 
           name="sumin🐶" 
           statusMessage="No message❌" 
+          onClick={() => handleUserClick('/bubble-talk/personal-profile')}
         />
         <SingleUser 
-          profileImage="path/to/image2.jpg" 
+          profileImage="/hyunlee.png" 
           name="hyunlee❄️" 
           statusMessage="😊" 
         />
         <SingleUser 
-          profileImage="path/to/image3.jpg" 
+          profileImage="/jieun.png" 
           name="jieun🌳" 
           statusMessage="('3' )" 
         />
@@ -42,11 +50,11 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 393px; /* 핸드폰 화면의 가로 크기 */
-  height: 852px; /* 핸드폰 화면의 세로 크기 */
+  width: 393px;
+  height: 852px;
   background-color: #ffffff;
-  border: 1px solid black; /* 경계선을 추가하여 실제로 크기를 확인할 수 있게 합니다. */
-  margin: 0 auto; /* 화면 가운데 정렬 */
+  border: 1px solid black;
+  margin: 0 auto;
   padding: 0;
 `;
 
@@ -61,6 +69,7 @@ const Title = styled.h2`
   font-weight: bold;
   width: 100%;
   margin: 10px 0;
+  color: #000;
 `;
 
 const Divider = styled.div`

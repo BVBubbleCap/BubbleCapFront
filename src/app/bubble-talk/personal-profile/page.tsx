@@ -11,9 +11,10 @@ export default function PersonalProfile() {
       <CloseButton />
       <Content>
         <SingleProfile 
-          profileImage="path/to/image.jpg" 
-          name="sumin🐶" 
-          statusMessage="No message❌"
+          profileImage="/sumin.png" 
+          nickname="sumin🐶" 
+          message="No message❌"
+          time='4:22PM'
         />
         <ChatButton/>
       </Content>

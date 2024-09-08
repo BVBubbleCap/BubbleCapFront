@@ -54,7 +54,7 @@ const Login = () => {
             </a>
           </BottomNavItem>
           <BottomNavItem>
-            <a href="/bubble-talk">
+            <a href="/bubble-talk/ticket-store">
             <img 
               src="/chat.png" 
               alt="Chat" 

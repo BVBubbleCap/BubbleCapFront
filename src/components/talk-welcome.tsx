@@ -1,62 +1,101 @@
 "use client";
 
-import styled from 'styled-components';
-import { useRouter } from 'next/navigation';
+import styled from "styled-components";
+import React from "react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-export default function TalkWelcome() {
-  const router = useRouter();
+const TalkWelcome = () => {
+    const router = useRouter();
 
-  const handleProceed = () => {
-    router.push('/bubble-talk/talk-start');
-  };
+    const routBack = () => {
+        router.back();
+    };
 
-  return (
-    <Container>
-      <Title>🎉 Welcome 🎉</Title>
-      <Message>
-        You&apos;ve completed the purchase of ticket. <br />
-        Are you sure you want to proceed?
-      </Message>
-      <ProceedButton onClick={handleProceed}>Yes, proceed.</ProceedButton>
-    </Container>
-  );
-}
+    const routProceed = () => {
+        router.push('/bubble-talk/friend-list');
+    }
+
+    return (
+        <Container>
+            <BackButton onClick={routBack}>{"<"}</BackButton>
+            <TitleWrapper>
+                <Title>🎉 Welcome 🎉</Title>
+            </TitleWrapper>
+            <LogoWrapper>
+                <Image src={'/baseballbubble.png'} alt="Baseball Bubble" width={300} height={250} />
+            </LogoWrapper>
+            <Message> You&apos;ve completed the purchase of ticket.</Message>  
+            <Message>Are you sure you want to proceed?</Message>
+            <ProceedButton onClick={routProceed}>Yes, proceed.</ProceedButton>
+        </Container>
+    );
+};
+
+export default TalkWelcome;
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 393px; /* 핸드폰 화면의 가로 크기 */
-  height: 852px; /* 핸드폰 화면의 세로 크기 */
-  background-color: #ffffff;
-  border: 1px solid black; /* 경계선을 추가하여 실제로 크기를 확인할 수 있게 합니다. */
-  margin: 0 auto; /* 화면 가운데 정렬 */
-  padding: 20px;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 393px; 
+    height: 852px;
+    background-color: #ffffff;
+    border: 1px solid black; 
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    overflow-y: scroll;
+`;
+
+const BackButton = styled.button`
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+`;
+
+const TitleWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 110px;
 `;
 
 const Title = styled.h1`
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+    font-size: 35px;
+    color: black;
+    margin: 0;
+    text-align: center;
+`;
+
+const LogoWrapper = styled.div`
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
 `;
 
 const Message = styled.p`
-  font-size: 16px;
-  margin-bottom: 20px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin: 10px 0;
 `;
 
 const ProceedButton = styled.button`
-  padding: 10px 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  
-  &:hover {
-    background-color: #e0e0e0;
-  }
+    background-color: #FFE4B2;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 30px;
 `;

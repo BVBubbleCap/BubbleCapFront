@@ -3,30 +3,35 @@
 import styled from 'styled-components';
 import SingleChat from '../../../components/single-chat';
 import NavBar from '../../../components/talk-search-bar'; 
+import Link from 'next/link'; 
 
 export default function ChatList() {
   return (
     <Container>
       <NavBar />
       <ChatItem>
+      <Link href="/bubble-talk/chat-room" passHref>
         <SingleChat 
-          profileImage="path/to/image1.jpg" 
+          profileImage="/sumin.png" 
           nickname="sumin🐶" 
           message="I Love You~😘" 
           time="4:22PM" 
         />
+        </Link>
       </ChatItem>
       <ChatItem>
+        <a href='/chat-room'>
         <SingleChat 
-          profileImage="path/to/image2.jpg" 
+          profileImage="/hyunlee.png" 
           nickname="hyunlee❄️" 
           message="ganadaramabasa!" 
           time="4:20PM" 
         />
+        </a>
       </ChatItem>
       <ChatItem>
         <SingleChat 
-          profileImage="path/to/image3.jpg" 
+           profileImage="/jieun.png" 
           nickname="jieun🌳" 
           message="ah................" 
           time="4:18PM" 

@@ -47,6 +47,7 @@ const MessageDetails = styled.div`
 `;
 
 const Nickname = styled.div`
+  color: #000;
   font-weight: bold;
   margin-bottom: 5px;
   text-align: right; /* 오른쪽 정렬 */
@@ -59,6 +60,7 @@ const MessageTimeContainer = styled.div`
 `;
 
 const MessageContent = styled.div`
+  color: #000;
   background-color: #fff;
   padding: 10px;
   border-radius: 10px;

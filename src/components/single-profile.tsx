@@ -2,50 +2,60 @@
 
 import styled from 'styled-components';
 
-interface SingleProfileProps {
+interface SingleChatProps {
     profileImage: string;
-    name: string;
-    statusMessage: string;
+    nickname: string;
+    message: string;
+    time: string;
     }
 
-export default function SingleProfile({ profileImage, name, statusMessage } : SingleProfileProps) {
+export default function SingleChat({ profileImage, nickname, message } : SingleChatProps) {
   return (
     <Container>
       <ProfileImage src={profileImage} alt="Profile Image" />
-      <Details>
-        <Name>{name}</Name>
-        <StatusMessage>{statusMessage}</StatusMessage>
-      </Details>
+      <ChatDetails>
+        <Nickname>{nickname}</Nickname>
+        <Message>{message}</Message>
+      </ChatDetails>
     </Container>
   );
 }
 
 const Container = styled.div`
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
-  padding: 20px;
-  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
 `;
 
 const ProfileImage = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-right: 10px;
   background-color: #add8e6;
 `;
 
-const Details = styled.div`
-  text-align: center;
+const ChatDetails = styled.div`
+margin-top: 15px;
+  flex: 1;
+  align-items: center;
+    display: flex;
+    flex-direction: column;
 `;
 
-const Name = styled.div`
+const Nickname = styled.div`
+  color: #000;
   font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
 `;
 
-const StatusMessage = styled.div`
+const Message = styled.div`
+  font-size: 15px;
   color: #888;
-  margin-bottom: 20px;
 `;

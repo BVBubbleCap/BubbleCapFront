@@ -8,9 +8,15 @@ export default function TicketStore() {
       <HeaderImage src="/ticket-logo.png" alt="Header Image" />
       <Title>Buy Ticket</Title>
       <ButtonContainer>
+      <a href="/bubble-talk/talk-welcome">
         <Button>First Month Free</Button>
+        </a>
+        <a href="/bubble-talk/talk-welcome">
         <Button>Monthly Subscription</Button>
+        </a>
+        <a href="/bubble-talk/talk-welcome">
         <Button>Annual Subscription</Button>
+        </a>
       </ButtonContainer>
     </Container>
   );
@@ -50,7 +56,8 @@ const ButtonContainer = styled.div`
 `;
 
 const Button = styled.button`
-  width: 90%;
+  width: 270px;
+  height: 100px;
   padding: 15px;
   margin: 10px 0;
   background-color:#0B1927;

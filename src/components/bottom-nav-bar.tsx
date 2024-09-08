@@ -6,10 +6,14 @@ export default function NavBar() {
   return (
     <NavContainer>
       <NavItem>
+        <a href='/bubble-talk/friend-list'>
         <img src="/multi-user.png" alt="MultiUser" />
+        </a>
       </NavItem>
       <NavItem>
+      <a href='/bubble-talk/chat-list'>
         <img src="/message.png" alt="Message" />
+        </a>
       </NavItem>
       <NavItem>
         <img src="/etc.png" alt="Etc" />
