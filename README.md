@@ -10,7 +10,8 @@
 
 ## 1. Who we are
 
-![image1](https://your-repository-url/path-to-image/image1.png)
+![BubbleCap logo](https://github.com/BVBubbleCap/BubbleCapFront/raw/main/image1.png)
+
 
 We are **BubbleCap**, a team of developers and sports enthusiasts combining blockchain technology with fan engagement. Our mission is to provide baseball fans with a decentralized platform to connect, engage, and interact with their favorite players in unique and meaningful ways.
 
