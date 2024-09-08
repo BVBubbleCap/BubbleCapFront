@@ -10,7 +10,7 @@
 
 ## 1. Who we are
 
-![image1.png](public/image1.png)
+![image1](https://your-repository-url/path-to-image/image1.png)
 
 We are **BubbleCap**, a team of developers and sports enthusiasts combining blockchain technology with fan engagement. Our mission is to provide baseball fans with a decentralized platform to connect, engage, and interact with their favorite players in unique and meaningful ways.
 
@@ -51,11 +51,11 @@ The core solution of BubbleCap is to offer fans new forms of engagement and rewa
 
 The "Bubble Catch" game provides three levels of draws based on randomness. There are three catch options with odds of 29%, 49%, and 89%. Trying for higher odds requires a higher cost but also offers greater rewards. Fans can collect NFTs to complete a team NFT collection composed of specific team players, and those who complete the team collection will receive invites to private parties. This process of collecting NFTs and participating in private fan meetings offers fans exciting challenges and is expected to increase the demand for Chiliz tokens.
 
-![image2.png](public/image2.png)
+![image2](https://your-repository-url/path-to-image/image2.png)
 
 Additionally, the "Bubble Talk" feature allows fans to use Chiliz fan tokens to chat directly with players, creating a stronger fan community. Unlike traditional fan communities, Bubble Talk combines communication with digital assets, providing fans with a tangible benefit of blockchain-based platforms.
 
-![image3.png](public/image3.png)
+![image3](https://your-repository-url/path-to-image/image3.png)
 
 “My Page” is a space where users can manage their information. Firstly, in My NFT, users can view the NFTs they have collected so far, and clicking each card provides detailed information about that NFT. In My CAP, users can check the CAP rewards given for collecting all NFTs of a specific team, which can lead to an invite to private parties. My Info allows users to view and manage their personal and account information, while Payments enables users to select their favorite team, top up team tokens, and purchase access to Bubble Talk or Bubble Catch.
 
