@@ -64,8 +64,8 @@ import TopNavBar from '../../../components/chat-room-nav';
 
 export default function ChatRoom() {
   const [messages, setMessages] = useState([
-    { type: 'left', profileImage: '/sumin.png', nickname: 'sumin🐶', message: '안녕', time: '15:11' },
-    { type: 'right', profileImage: '/seunghye.png', nickname: 'seunghye🥇', message: '안녕', time: '15:13' },
+    { type: 'left', profileImage: '/sumin.png', nickname: 'sumin🐶', message: 'Hello My name is SuminKim', time: '15:11' },
+    { type: 'right', profileImage: '/seunghye.png', nickname: 'seunghye🥇', message: 'My name is SeunghyeShin', time: '15:13' },
   ]);
   
   const messagesEndRef = useRef(null);
@@ -81,7 +81,7 @@ export default function ChatRoom() {
   const handleSendMessage = (newMessage) => {
     const newMessageObject = {
       type: 'right',
-      profileImage: 'seunghye.png',
+      profileImage: '/seunghye.png',
       nickname: 'seunghye🥇',
       message: newMessage,
       time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),

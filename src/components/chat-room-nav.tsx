@@ -34,6 +34,7 @@ const BackButton = styled.div`
 `;
 
 const Title = styled.div`
+  color: black; 
   font-size: 20px;
   font-weight: bold;
 `;
